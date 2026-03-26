@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1668.2040000000002 192.78333333333333" width="1668.2040000000002" height="192.78333333333333" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="Interview" data-to="Seed" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="모호함 ≤ 0.2" points="202.733,90.88333333333334 238.733,90.88333333333334 238.733,66.9 367.783,66.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Seed" data-to="Run" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="불변 YAML" points="486.05600000000004,66.9 647.542,66.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Run" data-to="Evaluate" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="코드 생성" points="815.462,66.9 970.414,66.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Evaluate" data-to="Done" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="통과" points="1081.277,57.93333333333334 1446.161,57.93333333333334 1446.161,55.900000000000006 1527.5710000000001,55.900000000000006 1527.5710000000001,84.73333333333335 1539.5710000000001,84.73333333333335" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Evaluate" data-to="Evolve" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="개선 필요" points="1081.277,75.86666666666667 1117.277,75.86666666666667 1117.277,95.01666666666668 1224.229,95.01666666666668 1224.229,114.51666666666668 1236.229,114.51666666666668" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Evolve" data-to="Interview" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="유사도 &lt; 0.95" points="1236.229,132.45 1224.229,132.45 1224.229,133.63333333333333 1101.239,133.63333333333333 1101.239,108.81666666666668 202.733,108.81666666666668" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Evolve" data-to="Done" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="유사도 ≥ 0.95" points="1368.5810000000001,123.48333333333335 1527.5710000000001,123.48333333333333 1527.5710000000001,97.03333333333335 1539.5710000000001,97.03333333333335" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="Interview" data-to="Seed" data-label="모호함 ≤ 0.2">
+  <rect x="246.73300000000003" y="50.90000000000001" width="77.05000000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="285.25800000000004" y="66.05000000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">모호함 ≤ 0.2</text>
+</g>
+<g class="edge-label" data-from="Seed" data-to="Run" data-label="불변 YAML">
+  <rect x="530.056" y="50.90000000000001" width="73.48599999999999" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="566.799" y="66.05000000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">불변 YAML</text>
+</g>
+<g class="edge-label" data-from="Run" data-to="Evaluate" data-label="코드 생성">
+  <rect x="859.462" y="50.90000000000001" width="66.952" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="892.938" y="66.05000000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">코드 생성</text>
+</g>
+<g class="edge-label" data-from="Evaluate" data-to="Done" data-label="통과">
+  <rect x="1454.161" y="39.900000000000006" width="41.41" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1474.866" y="55.050000000000004" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">통과</text>
+</g>
+<g class="edge-label" data-from="Evaluate" data-to="Evolve" data-label="개선 필요">
+  <rect x="1125.277" y="79.01666666666668" width="66.952" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1158.7530000000002" y="94.16666666666669" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">개선 필요</text>
+</g>
+<g class="edge-label" data-from="Evolve" data-to="Interview" data-label="유사도 &lt; 0.95">
+  <rect x="1109.239" y="117.63333333333333" width="82.99000000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1150.734" y="132.78333333333333" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">유사도 &lt; 0.95</text>
+</g>
+<g class="edge-label" data-from="Evolve" data-to="Done" data-label="유사도 ≥ 0.95">
+  <rect x="1412.5810000000001" y="107.48333333333333" width="82.99000000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1454.076" y="122.63333333333334" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">유사도 ≥ 0.95</text>
+</g>
+<g class="node" data-id="Interview" data-label="🔍 Interview
+소크라테스적 질문" data-shape="rectangle">
+  <rect x="40" y="72.95" width="162.733" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="121.3665" y="99.85000000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="121.3665" dy="-3.9000000000000012">🔍 Interview</tspan><tspan x="121.3665" dy="16.900000000000002">소크라테스적 질문</tspan></text>
+</g>
+<g class="node" data-id="Seed" data-label="📋 Seed
+사양 결정화" data-shape="rectangle">
+  <rect x="367.783" y="40" width="118.273" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="426.9195" y="66.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="426.9195" dy="-3.9000000000000012">📋 Seed</tspan><tspan x="426.9195" dy="16.900000000000002">사양 결정화</tspan></text>
+</g>
+<g class="node" data-id="Run" data-label="⚡ Run
+Double Diamond 실행" data-shape="rectangle">
+  <rect x="647.542" y="40" width="167.92" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="731.5020000000001" y="66.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="731.5020000000001" dy="-3.9000000000000012">⚡ Run</tspan><tspan x="731.5020000000001" dy="16.900000000000002">Double Diamond 실행</tspan></text>
+</g>
+<g class="node" data-id="Evaluate" data-label="✅ Evaluate
+3단계 검증" data-shape="rectangle">
+  <rect x="970.414" y="40" width="110.863" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1025.8455" y="66.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1025.8455" dy="-3.9000000000000012">✅ Evaluate</tspan><tspan x="1025.8455" dy="16.900000000000002">3단계 검증</tspan></text>
+</g>
+<g class="node" data-id="Evolve" data-label="🔄 Evolve
+Wonder/Reflect" data-shape="rectangle">
+  <rect x="1236.229" y="96.58333333333334" width="132.352" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1302.405" y="123.48333333333335" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1302.405" dy="-3.9000000000000012">🔄 Evolve</tspan><tspan x="1302.405" dy="16.900000000000002">Wonder/Reflect</tspan></text>
+</g>
+<g class="node" data-id="Done" data-label="🎯 완료" data-shape="rectangle">
+  <rect x="1539.5710000000001" y="72.43333333333334" width="88.633" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1583.8875" y="90.88333333333334" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">🎯 완료</text>
+</g>
+</svg>

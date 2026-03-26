@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1417.7927500000003 1111.7099999999998" width="1417.7927500000003" height="1111.7099999999998" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="ooo_evolve__" data-label="ooo evolve (진화 루프)">
+  <rect x="301.86188095238117" y="118" width="352.7855714285714" height="458.90999999999997" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="301.86188095238117" y="118" width="352.7855714285714" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="313.86188095238117" y="132" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">ooo evolve (진화 루프)</text>
+</g>
+<g class="subgraph" data-id="ooo_unstuck__" data-label="ooo unstuck (정체 탈출)">
+  <rect x="171.4530000000002" y="814.1099999999999" width="748.703" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="171.4530000000002" y="814.1099999999999" width="748.703" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="183.4530000000002" y="828.1099999999999" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">ooo unstuck (정체 탈출)</text>
+</g>
+<polyline class="edge" data-from="EXEC" data-to="EVAL" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="91.72649999999999,993.9099999999999 91.72649999999999,1005.9099999999999 804.6641190476191,1005.9099999999999 804.6641190476191,1017.9099999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="EVAL" data-to="W" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="개선 필요" points="841.6184523809525,1017.9099999999999 841.6184523809525,1005.9099999999999 1317.8167500000004,1005.9099999999999 1317.8167500000004,40 396.6348809523812,40 396.6348809523811,162" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CHECK" data-to="EXEC" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="No" points="519.2427857142859,542.5083333333333 519.2427857142859,703.81 566.8542857142859,703.81 566.8542857142859,784.1099999999999 91.72649999999999,784.1099999999999 91.72649999999999,957.0099999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CHECK" data-to="DONE" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Yes" points="556.0461190476192,542.5083333333333 556.0461190476192,618.91 666.3202857142858,618.91 666.3202857142858,699.2099999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="W" data-to="HA" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="정체 감지" points="340.3684523809526,215.8 340.3684523809526,715.81 151.4387857142858,715.81 151.4387857142858,796.1099999999999 239.1795000000002,796.1099999999999 239.1795000000002,858.1099999999999" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="W" data-to="RE" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="정체 감지" points="362.875023809524,215.8 362.875023809524,727.81 259.6807857142859,727.81 259.6807857142859,796.1099999999999 384.7115000000001,796.1099999999999 384.71150000000017,858.1099999999999" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="W" data-to="SM" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="정체 감지" points="385.38159523809543,215.8 385.38159523809543,727.81 371.9982857142859,727.81 371.9982857142859,772.1099999999999 538.3945000000001,772.1099999999999 538.3945000000001,858.1099999999999" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="W" data-to="AR" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="정체 감지" points="407.88816666666685,215.8 407.88816666666685,715.81 442.9502857142859,715.81 442.9502857142859,760.1099999999999 686.1495000000002,760.1099999999999 686.1495000000002,858.1099999999999" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="W" data-to="CO" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="정체 감지" points="430.39473809523827,215.8 430.39473809523827,227.8 425.64145238095256,227.8 425.6414523809526,703.81 513.9022857142859,703.81 513.9022857142859,748.1099999999999 839.0915000000002,748.1099999999999 839.0915000000002,858.1099999999999" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="HA" data-to="R" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="새 관점" points="239.1795000000002,911.9099999999999 239.17949999999996,993.9099999999999 1253.24475,993.9099999999999 1253.24475,52 494.3574523809523,52 494.35745238095257,263.79999999999995" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="RE" data-to="R" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="새 관점" points="384.71150000000017,911.9099999999999 384.7114999999999,981.9099999999999 1194.17275,981.9099999999999 1194.17275,64 523.2154523809523,64 523.2154523809526,263.79999999999995" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="SM" data-to="R" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="새 관점" points="538.3945000000001,911.9099999999999 538.3944999999999,969.9099999999999 1135.1007499999998,969.9099999999999 1135.1007499999998,76 552.0734523809524,76 552.0734523809525,263.79999999999995" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="AR" data-to="R" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="새 관점" points="686.1495000000002,911.9099999999999 686.1495,957.9099999999999 1076.02875,957.9099999999999 1076.02875,88 580.9314523809524,88 580.9314523809526,263.79999999999995" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CO" data-to="R" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="새 관점" points="839.0915000000002,911.9099999999999 839.0915,945.9099999999999 1016.9567499999998,945.9099999999999 1016.9567499999998,100 609.7894523809523,100 609.7894523809525,263.79999999999995" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="W" data-to="R" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="452.9013095238097,215.8 452.9013095238097,227.8 465.49945238095256,227.8 465.49945238095256,263.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="R" data-to="NEW" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="537.6444523809525,317.6 537.6444523809525,365.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="NEW" data-to="CHECK" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="537.6444523809525,402.5 537.6444523809525,450.5" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="EVAL" data-to="W" data-label="개선 필요">
+  <rect x="1284.3167500000004" y="968.6099999999999" width="66.952" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1317.7927500000003" y="983.7599999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">개선 필요</text>
+</g>
+<g class="edge-label" data-from="CHECK" data-to="EXEC" data-label="No">
+  <rect x="551.3542857142859" y="710.81" width="30.718000000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="566.7132857142859" y="725.9599999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">No</text>
+</g>
+<g class="edge-label" data-from="CHECK" data-to="DONE" data-label="Yes">
+  <rect x="647.8202857142858" y="625.91" width="36.658" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="666.1492857142857" y="641.06" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Yes</text>
+</g>
+<g class="edge-label" data-from="W" data-to="HA" data-label="정체 감지">
+  <rect x="117.93878571428581" y="734.81" width="66.952" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="151.4147857142858" y="749.9599999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">정체 감지</text>
+</g>
+<g class="edge-label" data-from="W" data-to="RE" data-label="정체 감지">
+  <rect x="226.180785714286" y="734.81" width="66.952" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="259.656785714286" y="749.9599999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">정체 감지</text>
+</g>
+<g class="edge-label" data-from="W" data-to="SM" data-label="정체 감지">
+  <rect x="338.4982857142859" y="734.81" width="66.952" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="371.9742857142859" y="749.9599999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">정체 감지</text>
+</g>
+<g class="edge-label" data-from="W" data-to="AR" data-label="정체 감지">
+  <rect x="409.4502857142859" y="722.81" width="66.952" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="442.9262857142859" y="737.9599999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">정체 감지</text>
+</g>
+<g class="edge-label" data-from="W" data-to="CO" data-label="정체 감지">
+  <rect x="480.4022857142859" y="710.81" width="66.952" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="513.8782857142859" y="725.9599999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">정체 감지</text>
+</g>
+<g class="edge-label" data-from="HA" data-to="R" data-label="새 관점">
+  <rect x="1225.24475" y="956.6099999999999" width="55.072" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1252.7807500000001" y="971.7599999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">새 관점</text>
+</g>
+<g class="edge-label" data-from="RE" data-to="R" data-label="새 관점">
+  <rect x="1166.17275" y="944.6099999999999" width="55.072" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1193.70875" y="959.7599999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">새 관점</text>
+</g>
+<g class="edge-label" data-from="SM" data-to="R" data-label="새 관점">
+  <rect x="1107.1007499999998" y="932.6099999999999" width="55.072" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1134.63675" y="947.7599999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">새 관점</text>
+</g>
+<g class="edge-label" data-from="AR" data-to="R" data-label="새 관점">
+  <rect x="1048.0287500000002" y="920.6099999999999" width="55.072" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1075.5647500000002" y="935.7599999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">새 관점</text>
+</g>
+<g class="edge-label" data-from="CO" data-to="R" data-label="새 관점">
+  <rect x="988.95675" y="908.6099999999999" width="55.072" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1016.4927500000001" y="923.7599999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">새 관점</text>
+</g>
+<g class="node" data-id="EVAL" data-label="✅ Evaluate
+검증 결과" data-shape="rectangle">
+  <rect x="767.7097857142858" y="1017.9099999999999" width="110.863" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="823.1412857142858" y="1044.81" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="823.1412857142858" dy="-3.9000000000000012">✅ Evaluate</tspan><tspan x="823.1412857142858" dy="16.900000000000002">검증 결과</tspan></text>
+</g>
+<g class="node" data-id="EXEC" data-label="⚡ 재실행" data-shape="rectangle">
+  <rect x="40" y="957.0099999999999" width="103.453" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="91.7265" y="975.4599999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">⚡ 재실행</text>
+</g>
+<g class="node" data-id="DONE" data-label="🎯 수렴 완료" data-shape="rectangle">
+  <rect x="606.0722857142858" y="699.2099999999999" width="120.49599999999998" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="666.3202857142858" y="717.66" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">🎯 수렴 완료</text>
+</g>
+<g class="node" data-id="W" data-label="🤔 Wonder
+아직 모르는 것은?" data-shape="rectangle">
+  <rect x="317.86188095238117" y="162" width="157.546" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="396.6348809523812" y="188.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="396.6348809523812" dy="-3.9000000000000012">🤔 Wonder</tspan><tspan x="396.6348809523812" dy="16.900000000000002">아직 모르는 것은?</tspan></text>
+</g>
+<g class="node" data-id="R" data-label="💭 Reflect
+온톨로지를 어떻게 개선?" data-shape="rectangle">
+  <rect x="436.6414523809526" y="263.8" width="202.00599999999997" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="537.6444523809525" y="290.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="537.6444523809525" dy="-3.9000000000000012">💭 Reflect</tspan><tspan x="537.6444523809525" dy="16.900000000000002">온톨로지를 어떻게 개선?</tspan></text>
+</g>
+<g class="node" data-id="NEW" data-label="🌱 새로운 세대" data-shape="rectangle">
+  <rect x="469.9864523809526" y="365.6" width="135.316" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="537.6444523809525" y="384.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">🌱 새로운 세대</text>
+</g>
+<g class="node" data-id="CHECK" data-label="유사도
+≥ 0.95?" data-shape="diamond">
+  <polygon points="537.6444523809525,450.5 592.8494523809526,505.705 537.6444523809525,560.91 482.43945238095256,505.705" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="537.6444523809525" y="505.705" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="537.6444523809525" dy="-3.9000000000000012">유사도</tspan><tspan x="537.6444523809525" dy="16.900000000000002">≥ 0.95?</tspan></text>
+</g>
+<g class="node" data-id="HA" data-label="🔓 Hacker
+제약 우회" data-shape="rectangle">
+  <rect x="187.4530000000002" y="858.1099999999999" width="103.453" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="239.1795000000002" y="885.0099999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="239.1795000000002" dy="-3.9000000000000012">🔓 Hacker</tspan><tspan x="239.1795000000002" dy="16.900000000000002">제약 우회</tspan></text>
+</g>
+<g class="node" data-id="RE" data-label="📚 Researcher
+증거 조사" data-shape="rectangle">
+  <rect x="318.9060000000002" y="858.1099999999999" width="131.611" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="384.71150000000017" y="885.0099999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="384.71150000000017" dy="-3.9000000000000012">📚 Researcher</tspan><tspan x="384.71150000000017" dy="16.900000000000002">증거 조사</tspan></text>
+</g>
+<g class="node" data-id="SM" data-label="✂️ Simplifier
+단순화" data-shape="rectangle">
+  <rect x="478.51700000000017" y="858.1099999999999" width="119.75500000000001" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="538.3945000000002" y="885.0099999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="538.3945000000002" dy="-3.9000000000000012">✂️ Simplifier</tspan><tspan x="538.3945000000002" dy="16.900000000000002">단순화</tspan></text>
+</g>
+<g class="node" data-id="AR" data-label="🏗️ Architect
+구조 재설계" data-shape="rectangle">
+  <rect x="626.2720000000002" y="858.1099999999999" width="119.755" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="686.1495000000002" y="885.0099999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="686.1495000000002" dy="-3.9000000000000012">🏗️ Architect</tspan><tspan x="686.1495000000002" dy="16.900000000000002">구조 재설계</tspan></text>
+</g>
+<g class="node" data-id="CO" data-label="⚔️ Contrarian
+가정 도전" data-shape="rectangle">
+  <rect x="774.0270000000002" y="858.1099999999999" width="130.12900000000002" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="839.0915000000002" y="885.0099999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="839.0915000000002" dy="-3.9000000000000012">⚔️ Contrarian</tspan><tspan x="839.0915000000002" dy="16.900000000000002">가정 도전</tspan></text>
+</g>
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 951.4834999999999 548" width="951.4834999999999" height="548" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="seq-arrow" markerWidth="8" markerHeight="5" refX="8" refY="2.5" orient="auto-start-reverse">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" />
+  </marker>
+  <marker id="seq-arrow-open" markerWidth="8" markerHeight="5" refX="8" refY="2.5" orient="auto-start-reverse">
+    <polyline points="0 0, 8 2.5, 0 5" fill="none" stroke="var(--_arrow)" stroke-width="1" />
+  </marker>
+</defs>
+<g class="block" data-type="loop" data-label="모호함 &gt; 0.2">
+  <rect x="30" y="118" width="461.308" height="180" rx="0" ry="0" fill="none" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="30" y="118" width="114.67000000000002" height="18" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="36" y="127" font-size="11" font-weight="600" fill="var(--_text-sec)" dy="3.8499999999999996">loop [모호함 &gt; 0.2]</text>
+</g>
+<line class="lifeline" data-actor="U" x1="80" y1="70" x2="80" y2="518" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<line class="lifeline" data-actor="SI" x1="236.6255" y1="70" x2="236.6255" y2="518" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<line class="lifeline" data-actor="BK" x1="417.2795" y1="70" x2="417.2795" y2="518" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<line class="lifeline" data-actor="SC" x1="574.9625" y1="70" x2="574.9625" y2="518" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<line class="lifeline" data-actor="ON" x1="714.9625" y1="70" x2="714.9625" y2="518" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<line class="lifeline" data-actor="SA" x1="861.16" y1="70" x2="861.16" y2="518" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<g class="message" data-from="U" data-to="SI" data-label="ooo interview &quot;아이디어&quot;" data-line-style="solid" data-arrow-head="filled" data-self="false">
+  <line x1="80" y1="90" x2="236.6255" y2="90" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <text x="158.31275" y="80" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">ooo interview &quot;아이디어&quot;</text>
+</g>
+<g class="message" data-from="SI" data-to="U" data-label="소크라테스적 질문" data-line-style="solid" data-arrow-head="filled" data-self="false">
+  <line x1="236.6255" y1="158" x2="80" y2="158" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <text x="158.31275" y="148" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">소크라테스적 질문</text>
+</g>
+<g class="message" data-from="U" data-to="SI" data-label="답변" data-line-style="solid" data-arrow-head="filled" data-self="false">
+  <line x1="80" y1="198" x2="236.6255" y2="198" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <text x="158.31275" y="188" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">답변</text>
+</g>
+<g class="message" data-from="SI" data-to="BK" data-label="범위 균형 확인" data-line-style="solid" data-arrow-head="filled" data-self="false">
+  <line x1="236.6255" y1="238" x2="417.2795" y2="238" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <text x="326.9525" y="228" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">범위 균형 확인</text>
+</g>
+<g class="message" data-from="BK" data-to="SI" data-label="줌아웃 필요 여부" data-line-style="dashed" data-arrow-head="filled" data-self="false">
+  <line x1="417.2795" y1="278" x2="236.6255" y2="278" stroke="var(--_line)" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#seq-arrow)" />
+  <text x="326.9525" y="268" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">줌아웃 필요 여부</text>
+</g>
+<g class="message" data-from="SI" data-to="SC" data-label="종료 가능?" data-line-style="solid" data-arrow-head="filled" data-self="false">
+  <line x1="236.6255" y1="318" x2="574.9625" y2="318" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <text x="405.794" y="308" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">종료 가능?</text>
+</g>
+<g class="message" data-from="SC" data-to="SI" data-label="명확성 충분" data-line-style="dashed" data-arrow-head="filled" data-self="false">
+  <line x1="574.9625" y1="358" x2="236.6255" y2="358" stroke="var(--_line)" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#seq-arrow)" />
+  <text x="405.794" y="348" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">명확성 충분</text>
+</g>
+<g class="message" data-from="SI" data-to="ON" data-label="온톨로지 분석" data-line-style="solid" data-arrow-head="filled" data-self="false">
+  <line x1="236.6255" y1="398" x2="714.9625" y2="398" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <text x="475.794" y="388" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">온톨로지 분석</text>
+</g>
+<g class="message" data-from="ON" data-to="SA" data-label="구조 전달" data-line-style="solid" data-arrow-head="filled" data-self="false">
+  <line x1="714.9625" y1="438" x2="861.16" y2="438" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <text x="788.06125" y="428" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">구조 전달</text>
+</g>
+<g class="message" data-from="SA" data-to="U" data-label="Seed YAML 생성" data-line-style="solid" data-arrow-head="filled" data-self="false">
+  <line x1="861.16" y1="478" x2="80" y2="478" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <text x="470.58" y="468" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">Seed YAML 생성</text>
+</g>
+<g class="actor" data-id="U" data-label="사용자" data-type="participant">
+  <rect x="40" y="30" width="80" height="40" rx="4" ry="4" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="80" y="50" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">사용자</text>
+</g>
+<g class="actor" data-id="SI" data-label="Socratic Interviewer" data-type="participant">
+  <rect x="160" y="30" width="153.251" height="40" rx="4" ry="4" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="236.6255" y="50" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">Socratic Interviewer</text>
+</g>
+<g class="actor" data-id="BK" data-label="Breadth Keeper" data-type="participant">
+  <rect x="353.251" y="30" width="128.05700000000002" height="40" rx="4" ry="4" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="417.2795" y="50" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">Breadth Keeper</text>
+</g>
+<g class="actor" data-id="SC" data-label="Seed Closer" data-type="participant">
+  <rect x="521.308" y="30" width="107.30900000000001" height="40" rx="4" ry="4" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="574.9625" y="50" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">Seed Closer</text>
+</g>
+<g class="actor" data-id="ON" data-label="Ontologist" data-type="participant">
+  <rect x="669.0885" y="30" width="91.748" height="40" rx="4" ry="4" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="714.9625" y="50" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">Ontologist</text>
+</g>
+<g class="actor" data-id="SA" data-label="Seed Architect" data-type="participant">
+  <rect x="800.8365" y="30" width="120.647" height="40" rx="4" ry="4" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="861.16" y="50" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">Seed Architect</text>
+</g>
+</svg>

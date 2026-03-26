@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1003.8934999999999 810.8" width="1003.8934999999999" height="810.8" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="ooo_evaluate_3__" data-label="ooo evaluate (3단계 정식 검증)">
+  <rect x="154.15625" y="106.9" width="279.50424999999996" height="504.7" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="154.15625" y="106.9" width="279.50424999999996" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="166.15625" y="120.9" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">ooo evaluate (3단계 정식 검증)</text>
+</g>
+<g class="subgraph" data-id="ooo_qa____" data-label="ooo qa (단일 패스 빠른 판정)">
+  <rect x="714.0989999999999" y="106.90000000000003" width="159.906" height="130.7" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="714.0989999999999" y="106.90000000000003" width="159.906" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="726.0989999999999" y="120.90000000000003" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">ooo qa (단일 패스 빠른 판정)</text>
+</g>
+<polyline class="edge" data-from="CODE" data-to="S1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="498.3822083333333,76.9 498.3822083333333,88.9 247.81774999999993,88.9 247.81774999999993,150.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S1" data-to="REJECT1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="실패" points="221.93058333333332,221.60000000000002 221.93058333333332,233.60000000000002 202.74599999999998,233.60000000000002 202.74599999999998,629.6 107.65800000000002,629.6 107.65800000000002,721.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S2" data-to="APPROVE" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="점수 ≥ 0.8" points="266.5083333333333,408.6 266.5083333333333,420.6 247.6325,420.6 247.63250000000005,721.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S3" data-to="VERDICT" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="338.14649999999995,595.6 338.14649999999995,653.6 447.04249999999996,653.6 447.04249999999996,665.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CODE" data-to="QA" data-style="dotted" data-arrow-start="false" data-arrow-end="true" points="543.4875416666666,76.9 543.4875416666666,88.90000000000003 794.0519999999999,88.90000000000003 794.0519999999999,150.90000000000003" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="QA" data-to="PASS" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="794.0519999999999,221.60000000000002 794.0519999999999,256.6 665.5629999999998,256.6 665.5629999999998,291.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="QA" data-to="REVISE" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="794.0519999999999,221.60000000000002 794.0519999999999,256.6 794.0519999999999,256.6 794.0519999999999,291.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="QA" data-to="FAIL" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="794.0519999999999,221.60000000000002 794.0519999999999,256.6 919.5769999999999,256.6 919.5769999999999,291.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S1" data-to="S2" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="통과" points="273.70491666666663,221.60000000000002 273.70491666666663,233.60000000000002 292.8895,233.60000000000002 292.8895,337.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S2" data-to="S3" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="점수 &lt; 0.8" points="319.27066666666667,408.6 319.27066666666667,420.6 338.14649999999995,420.6 338.14649999999995,524.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="S1" data-to="REJECT1" data-label="실패">
+  <rect x="86.65800000000002" y="636.6" width="41.41" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="107.36300000000001" y="651.75" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">실패</text>
+</g>
+<g class="edge-label" data-from="S2" data-to="APPROVE" data-label="점수 ≥ 0.8">
+  <rect x="214.63249999999994" y="660.6" width="65.17" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="247.21749999999994" y="675.75" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">점수 ≥ 0.8</text>
+</g>
+<g class="edge-label" data-from="S1" data-to="S2" data-label="통과">
+  <rect x="271.8895" y="264.6" width="41.41" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="292.5945" y="279.75" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">통과</text>
+</g>
+<g class="edge-label" data-from="S2" data-to="S3" data-label="점수 &lt; 0.8">
+  <rect x="305.1465" y="451.6" width="65.17" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="337.7315" y="466.75" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">점수 &lt; 0.8</text>
+</g>
+<g class="node" data-id="CODE" data-label="📦 실행된 코드" data-shape="rectangle">
+  <rect x="453.27687499999996" y="40" width="135.316" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="520.9348749999999" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">📦 실행된 코드</text>
+</g>
+<g class="node" data-id="REJECT1" data-label="❌ 기계적 오류" data-shape="rectangle">
+  <rect x="40" y="721.9" width="135.316" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="107.658" y="740.35" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">❌ 기계적 오류</text>
+</g>
+<g class="node" data-id="APPROVE" data-label="✅ 승인" data-shape="rectangle">
+  <rect x="203.31600000000003" y="721.9" width="88.633" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="247.63250000000002" y="740.35" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">✅ 승인</text>
+</g>
+<g class="node" data-id="VERDICT" data-label="🏛️ 합의 판정
+APPROVED / REJECTED / CONDITIONAL" data-shape="rectangle">
+  <rect x="303.8025" y="665.6" width="286.4799999999999" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="447.04249999999996" y="692.5" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="447.04249999999996" dy="-3.9000000000000012">🏛️ 합의 판정</tspan><tspan x="447.04249999999996" dy="16.900000000000002">APPROVED / REJECTED / CONDITIONAL</tspan></text>
+</g>
+<g class="node" data-id="PASS" data-label="✅ PASS" data-shape="rectangle">
+  <rect x="618.2824999999998" y="291.6" width="94.561" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="665.5629999999998" y="310.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">✅ PASS</text>
+</g>
+<g class="node" data-id="REVISE" data-label="🔄 REVISE" data-shape="rectangle">
+  <rect x="740.8435" y="291.6" width="106.417" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="794.0519999999999" y="310.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">🔄 REVISE</text>
+</g>
+<g class="node" data-id="FAIL" data-label="❌ FAIL" data-shape="rectangle">
+  <rect x="875.2604999999999" y="291.6" width="88.63300000000001" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="919.5769999999999" y="310.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">❌ FAIL</text>
+</g>
+<g class="node" data-id="S1" data-label="Stage 1: Mechanical
+💰 $0
+lint, build, test" data-shape="rectangle">
+  <rect x="170.15625" y="150.9" width="155.32299999999998" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="247.81775" y="186.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="247.81775" dy="-12.350000000000001">Stage 1: Mechanical</tspan><tspan x="247.81775" dy="16.900000000000002">💰 $0</tspan><tspan x="247.81775" dy="16.900000000000002">lint, build, test</tspan></text>
+</g>
+<g class="node" data-id="S2" data-label="Stage 2: Semantic
+💎 Standard
+AC 준수, 목표 정렬" data-shape="rectangle">
+  <rect x="213.74599999999998" y="337.9" width="158.28699999999998" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="292.8895" y="373.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="292.8895" dy="-12.350000000000001">Stage 2: Semantic</tspan><tspan x="292.8895" dy="16.900000000000002">💎 Standard</tspan><tspan x="292.8895" dy="16.900000000000002">AC 준수, 목표 정렬</tspan></text>
+</g>
+<g class="node" data-id="S3" data-label="Stage 3: Consensus
+🚀 Frontier
+다중 모델 심의" data-shape="rectangle">
+  <rect x="258.6325" y="524.9" width="159.028" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="338.1465" y="560.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="338.1465" dy="-12.350000000000001">Stage 3: Consensus</tspan><tspan x="338.1465" dy="16.900000000000002">🚀 Frontier</tspan><tspan x="338.1465" dy="16.900000000000002">다중 모델 심의</tspan></text>
+</g>
+<g class="node" data-id="QA" data-label="QA Judge
+5개 차원 평가
+점수: 0.0 ~ 1.0" data-shape="rectangle">
+  <rect x="730.0989999999999" y="150.90000000000003" width="127.90599999999999" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="794.0519999999999" y="186.25000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="794.0519999999999" dy="-12.350000000000001">QA Judge</tspan><tspan x="794.0519999999999" dy="16.900000000000002">5개 차원 평가</tspan><tspan x="794.0519999999999" dy="16.900000000000002">점수: 0.0 ~ 1.0</tspan></text>
+</g>
+</svg>
