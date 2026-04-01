@@ -209,6 +209,15 @@ ouroboros-guide/
 
 이번 싸이클에서는 origin 변경이 없어 guide 본문은 유지했고, 동기화 기준점만 재확인했습니다.
 
+### 최근 upstream 커밋
+
+- `896c8cb fix(#214): prefer ./mvnw for Maven wrapper projects (#219)`
+- `7c2404f fix(install): revert PACKAGE_NAME to base — extras are composed separately`
+- `6962fc6 fix(install): add [claude] extra to all ouroboros-ai references (#217)`
+- `de0ab03 fix(docs): remove dead Design Documents links + fix nested code block`
+- `3faae6a fix(docs): address all review findings on repo guidance`
+- `5769933 Remove Discord contact link from issue config`
+
 ### 변경 파일 샘플
 
 - 이번 싸이클에서는 신규 변경 파일이 없습니다.
