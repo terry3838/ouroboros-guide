@@ -196,3 +196,22 @@ ouroboros-guide/
 | 아키텍처 문서 | [docs/architecture.md](https://github.com/Q00/ouroboros/blob/main/docs/architecture.md) |
 
 > 이 가이드는 Ouroboros v0.26.x를 기준으로 작성되었습니다. 최신 버전과 차이가 있을 수 있으므로, 각 스킬 설명의 소스 링크를 통해 원본 SKILL.md를 확인하세요.
+
+<!-- GUIDE_SYNC:START -->
+## 자동 동기화 상태
+
+- origin repo: `ouroboros`
+- latest source commit: `896c8cb9e017`
+- sync mode: `no-change`
+- 영향 분류: 일반 변경
+
+### 이번 반영 포인트
+
+이번 싸이클에서는 origin 변경이 없어 guide 본문은 유지했고, 동기화 기준점만 재확인했습니다.
+
+### 변경 파일 샘플
+
+- 이번 싸이클에서는 신규 변경 파일이 없습니다.
+
+> 이 블록은 guide sync가 자동 갱신합니다.
+<!-- GUIDE_SYNC:END -->

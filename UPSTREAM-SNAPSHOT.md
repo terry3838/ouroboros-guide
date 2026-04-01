@@ -1,12 +1,15 @@
 # Upstream Snapshot — ouroboros
 
 - source repo: `https://github.com/terry3838/ouroboros.git`
-- synced commit: `896c8cb9e01770c38344faa5e31684a751df5cc3`
+- previous synced commit: `896c8cb9e01770c38344faa5e31684a751df5cc3`
+- current synced commit: `896c8cb9e01770c38344faa5e31684a751df5cc3`
+- sync mode: `no-change`
+- impact labels: 일반 변경
 - guide repo: `ouroboros-guide`
 
 ## 원본 한줄 요약
 
-<p align="right"> <strong>English</strong> | <a href="./README.ko.md">한국어</a> </p>
+◯ ─────────── ◯ ◯ ─────────── ◯
 
 ## top-level structure
 
@@ -30,6 +33,10 @@
 - `hooks/`
 - `LICENSE`
 - `llms-full.txt`
+
+## changed files
+
+- 변경 파일 없음
 
 ## README excerpt
 
@@ -114,4 +121,43 @@ Most AI coding fails at the **input**, not the output. The bottleneck is not AI 
 | Manual QA | "Looks good" is not verification | 3-stage automated evaluation gate |
 
 ---
+
+## Quick Start
+
+**Install** — one command, everything auto-detected:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Q00/ouroboros/main/scripts/install.sh | bash
+```
+
+**Build** — open your AI coding agent and go:
+
+```
+> ooo interview "I want to build a task management CLI"
+```
+
+> Works with Claude Code and Codex CLI. The installer detects your runtime, registers the MCP server, and installs skills automatically.
+
+<details>
+<summary><strong>Other install methods</strong></summary>
+
+**Claude Code plugin only** (no system package):
+```bash
+claude plugin marketplace add Q00/ouroboros && claude plugin install ouroboros@ouroboros
+```
+Then run `ooo setup` inside a Claude Code session.
+
+**pip / uv / pipx**:
+```bash
+pip install ouroboros-ai                # base
+pip install ouroboros-ai[claude]        # + Claude Code deps
+pip install ouroboros-ai[all]           # everything
+ouroboros setup                         # configure runtime
+```
+
+See runtime guides: [Claude Code](./docs/runtime-guides/claude-code.md) · [Codex CLI](./docs/runtime-guides/codex.md)
+
+</details>
+
+> **Python >= 3.12 required.** See [pyproject.toml](./pyproject.toml) for the full dependency list.
 ```
