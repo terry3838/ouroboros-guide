@@ -92,7 +92,7 @@
 
 ---
 
-> **Security Notice (2026-03-24): LiteLLM PyPI Supply Chain Attack**
+> **Security Notice ([REDACTED_PHONE]): LiteLLM PyPI Supply Chain Attack**
 >
 > LiteLLM versions **1.82.7** and **1.82.8** on PyPI contained a malicious `.pth` file that auto-executes on every Python startup, exfiltrating environment variables, API keys, and credentials to an external server.
 >
